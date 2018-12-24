@@ -38,11 +38,12 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Padding(
-              padding: new EdgeInsets.fromLTRB(70, 0, 70, 0),
-              child: Image.network('https://github.com/flutter/website/blob/master/src/_includes/code/layout/lakes/images/lake.jpg?raw=true',)
+              padding: new EdgeInsets.fromLTRB(70, 5, 70, 5),
+              child: Image.network('https://www.empowervate.org/wp-content/uploads/2015/11/circle-300x300.jpg',
+                      height: 70,)
             ),
             Padding(
-              padding: new EdgeInsets.fromLTRB(70, 0, 70, 0),
+              padding: new EdgeInsets.fromLTRB(70, 5, 70, 5),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: "Username",
@@ -51,7 +52,7 @@ class _LoginPageState extends State<LoginPage> {
               )
             ),
             Padding(
-              padding: new EdgeInsets.fromLTRB(70, 0, 70, 0),
+              padding: new EdgeInsets.fromLTRB(70, 5, 70, 5),
               child: TextField(
                 decoration: InputDecoration(
                   hintText: "Password",
@@ -61,7 +62,7 @@ class _LoginPageState extends State<LoginPage> {
               )
             ),
             Padding(
-              padding: new EdgeInsets.fromLTRB(70, 0, 70, 0),
+              padding: new EdgeInsets.fromLTRB(70, 5, 70, 5),
               child: RaisedButton(
                 child: const Text('LOGIN',),
                 color: Theme.of(context).accentColor,
