@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
-import 'package:pth_lab/views/CourseDetail.dart';
+import 'package:pth_lab/Views/CourseLists.dart';
+import 'package:pth_lab/Views/Feedbacks.dart';
+import 'package:pth_lab/Views/Dontate.dart';
 
 //This class is responsible for showing the Home Page
 class HomePage extends StatelessWidget 
@@ -28,14 +30,14 @@ class HomePage extends StatelessWidget
               leading: Icon(Icons.code,color: Colors.deepOrange,),
               title: Text('သင်ရိုးများကြည့်မည်'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CourseLists()));
               },
             ),
             ListTile(
               leading: Icon(Icons.feedback,color: Colors.deepOrange,),
               title: Text('အကြံပြုလွှာပေးမည်'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Feedbacks()));
               },
             ),
             ListTile(
@@ -49,7 +51,7 @@ class HomePage extends StatelessWidget
               leading: Icon(Icons.monetization_on,color: Colors.deepOrange,),
               title: Text('လှူဒါန်းမည်'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Donate()));
               },
             ),
           ],
@@ -115,7 +117,7 @@ class HomePage extends StatelessWidget
                                     onPressed: () {
                                       Navigator.push(
                                         context,
-                                        MaterialPageRoute(builder: (context) => CourseDetail()),
+                                        MaterialPageRoute(builder: (context) => CourseLists()),
                                       );
                                     },
                                   ),

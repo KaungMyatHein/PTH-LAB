@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:pth_lab/Views/HomePage.dart';
+import 'package:pth_lab/Views/CourseLists.dart';
+import 'package:pth_lab/Views/Feedbacks.dart';
 
-//This class is responsible for showing the course detail information
-class CourseDetail extends StatelessWidget
+class Donate extends StatelessWidget
 {
   @override
   Widget build(BuildContext context) {
@@ -19,21 +21,21 @@ class CourseDetail extends StatelessWidget
               leading: Icon(Icons.home,color: Colors.deepOrange,),
               title: Text('အိမ်'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
               },
             ),
             ListTile(
               leading: Icon(Icons.code,color: Colors.deepOrange,),
               title: Text('သင်ရိုးများကြည့်မည်'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CourseLists()));
               },
             ),
             ListTile(
               leading: Icon(Icons.feedback,color: Colors.deepOrange,),
               title: Text('အကြံပြုလွှာပေးမည်'),
               onTap: () {
-                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Feedbacks()));
               },
             ),
             ListTile(
@@ -72,11 +74,7 @@ class CourseDetail extends StatelessWidget
           ),
         ], 
       ),
-      body: Container(
-        child: SingleChildScrollView(
-          child: Text('data')
-        )
-      ),
     );
   }
+
 }
