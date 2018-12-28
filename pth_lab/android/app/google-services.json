@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "468193899701",
+    "firebase_url": "https://flutter-3628b.firebaseio.com",
+    "project_id": "flutter-3628b",
+    "storage_bucket": "flutter-3628b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468193899701:android:1b318bab87314ae7",
+        "android_client_info": {
+          "package_name": "com.pthlab.pthlabsharing"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468193899701-k77l0don2jb10lhgrc6i4q71lngm6hli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNTJ7s1ZuY3-RVKpiNCCqbekxagWjMlCE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
